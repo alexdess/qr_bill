@@ -1072,7 +1072,7 @@ class QRBillException implements Exception {
 
 class Actor {
   String? name = "";
-  String? addressType = QRBill.addTypeStructured;
+  String? addressType = "";
   String? address1 = "";
   String? address2 = "";
   String? postcode = "";
