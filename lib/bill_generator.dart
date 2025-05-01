@@ -419,7 +419,7 @@ class BillGenerator {
     } else {
       _drawText(c,
           offset: secondLine + const Offset(90.0, 0.0),
-          text: qrBill.getAmount().toString(),
+          text: qrBill.getAmount()?.toStringAsFixed(2) ?? "",
           style: styleDefault,
           rhc: rhc,
           bottomPadding: _majorGap);

@@ -488,7 +488,7 @@ class QRBill {
       _amount = 0.0;
       return true;
     } else {
-      String amount = _formatAmountAsString(amt);
+      String amount = amt.toStringAsFixed(2);
       _amount = double.tryParse(amount);
       if (_amount != null && amount.length > 12) {
         return false;
