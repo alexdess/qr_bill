@@ -214,7 +214,7 @@ class QRBill {
             break;
           case Data.amount:
             if (getAmount() != null && getAmount()! > 0) {
-              out.write(_formatAmountAsString(getAmount()));
+              out.write(getAmount()?.toStringAsFixed(2) ?? "");
             }
             out.writeln();
             break;
